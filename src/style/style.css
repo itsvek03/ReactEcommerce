@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+.navmy_style {
+    background:'#fff';
+    box-shadow: 0 10px 30px 0 rgba(128, 173, 21, 0.15);
+    
+}
+
+.navbar-brand {
+    width: 80px;
+    height: 50px;
+}
+
+.navbar li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    /* color:#ff7230; */
+    color: #333;
+    /* relative used for underline */
+    position: relative;
+}
+
+.navbar li a:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    bottom: 50%;
+    width: 0%;
+    height: 3%;
+    background: #ff7230;
+    transition: all 0.3s linear;
+}
+
+.navbar li a:hover:before {
+    width: 80%;
+}
+
+.navbar li a:hover {
+    color: #ff7230 !important;
+}
+
+/* .navbar-light .navbar-nav .nav-link.active{
+    color: #ff7230 !important;
+} */
+/* OR to make default color */
+.navbar-nav li .active {
+    color: #ff7230 !important;
+}
+
+
+.foot footer{
+    width:100%;
+    line-height: 50px;
+    background-color: #ff7230;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.foot footer p{
+    margin: 0;
+}
+
+@media(max-width:998px) {
+    .navbar-nav {
+        margin-top: 40px !important;
+        text-align: center !important;
+    }
+
+    .navbar li a:hover:before {
+        width: 0%;
+    }
+}
+
+
+/* @media(min-width:400px) {
+    .foot footer{
+        position: sticky;
+    }
+} */

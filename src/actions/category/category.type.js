@@ -1,0 +1,5 @@
+export const GET_CAT = "GET_CAT"
+export const UPDATE_CAT = "UPDATE_CAT"
+export const DELETE_CAT = "DELETE_CAT"
+export const ERROR = "ERROR"
+export const POST_CAT = "POST_CAT"
